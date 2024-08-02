@@ -1,0 +1,337 @@
+*
+ * Theme Name:     Planty
+ * Author:         s0led0b0ut
+ * Template:       oceanwp
+ * Text Domain:	   planty
+ * Description:    OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful &amp; professional design. Very fast, responsive, RTL &amp; translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet &amp; mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor &amp; WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it
+ */
+ body {
+    font-family: 'Syne', sans-serif;
+    color: #000000;
+}
+
+
+/* Général */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif;
+}
+
+p, a, span, div {
+    font-family: 'Syne', sans-serif;
+}
+
+.clr {
+    padding: 0 !important;
+}
+
+
+/* Menu header */
+#site-navigation-wrap {
+    right: 0 !important;
+    margin: 0 !important;
+    float: right !important;
+}
+
+.menu-item-21 a,
+.menu-item-22 a {
+    font-size: 16px !important;
+    font-weight: 400 !important; 
+    width: 236px !important;
+    text-align: center !important;
+    padding: 0 !important;
+}    
+.menu-item-21 a {
+    background-color: #DC9F96;
+    color: white !important;
+}
+
+.menu-item-21 a:hover{
+    background-color: #C02E44;
+    color: white !important
+}
+
+.menu-item-22 a:hover {
+    font-size: 13px !important;
+    font-weight: bold !important;
+}
+
+/* Désactiver les outlines et les bordures pour les états actifs et focus */
+.menu-item-21 a:active,
+.menu-item-21 a:focus,
+.menu-item-22 a:active,
+.menu-item-22 a:focus,
+.menu-item-23 a:active,
+.menu-item-23 a:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+/* Réglages feuilles */
+#custom-image-1 {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 100px;
+}
+
+#custom-image-2 {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    width: 150px;
+}
+
+#custom-image-3 {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    width: 150px;
+}
+
+
+/* Style pour les champs de texte et les zones de texte des formulaires */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="url"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="number"],
+.wpcf7 textarea {
+    background-color: #ffffff; 
+    color: #000000; 
+    border: none; 
+    border-radius: 7px;
+    padding: 10px; 
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px; 
+}
+
+
+/* Centrer le bouton d'envoi */
+.wpcf7 input[type="submit"] {
+    display: block;
+    width: 165px;
+    height: 55px;
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    background-color: #E0B9B4;
+    border-radius: 5px;
+    color: #ffffff; 
+    border: none;
+    cursor: pointer; 
+    font-size: 15px; 
+    text-align: center; 
+    text-transform: capitalize; 
+}
+
+.wpcf7 input[type="submit"]:hover {
+    background-color:  #C02E44 !important; 
+    color: #ffffff !important; 
+}
+
+
+/* Style pour les champs de texte et les zones de texte Formulaire 2 */
+.elementor-widget-container {
+    max-width: 860px !important;
+    margin: 20px auto;
+    padding: 0; 
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    border-bottom: 1px solid white; 
+    padding-bottom: 20px; 
+    padding-top: 20px;
+    margin-bottom: 50px;
+} 
+
+.product {
+    border-radius: 0px !important;
+    width: 39px;
+    height: 56px;
+    text-align: center;
+}
+
+.form2 {
+    color: white !important;
+    padding-bottom: 30px;
+}
+
+.FormMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 20px 0;
+}
+
+.delivery {
+    border-left: 1px solid white;
+    padding-left: 65px;
+}
+
+
+/* Masquer les flèches dans les champs de type number pour WebKit (Chrome, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Masquer les flèches dans les champs de type number pour Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Style spécifique pour le formulaire n°2 */
+.Form2Fields {
+    height: 71px !important; /* Hauteur des champs */
+}
+
+
+/* Style for the Admin menu item */
+.menu-item-admin {
+    flex: 1; /* This will make the item take up the available space */
+    text-align: center; /* Center the text */
+    width: 140px !important;
+}
+
+
+/* Petits écrans (téléphones en mode portrait) */
+@media (min-width: 320px) and (max-width: 745px) {
+    #mobile-menu-search {
+        display: none !important;
+    }
+    
+    #site-navigation-wrap {
+        right: 0 !important;
+        margin: 0 !important;
+        width: 50%  !important;
+    }
+
+    .menu-item-21 a {
+        background-color: #DC9F96 !important;
+        color: white !important;
+        text-align: center !important;
+        padding: 0 !important;
+        height: 48px !important;
+        align-content: center !important;
+    }
+
+    .menu-item-21 a:hover{
+        background-color: #C02E44 !important;
+        color: white !important;
+        text-align: center !important;
+    }
+    
+    .menu-item-22 a {
+        background-color: #ffffff !important;
+        text-align: center !important;
+    }
+
+    .menu-item-22 a:hover {
+        background-color: #ffffff !important;
+        font-weight: bold !important;
+    }
+
+    .mobile-menu-search {
+        visibility: hidden !important;
+        display: none !important;
+        text-align: center !important;
+    }
+
+    #site-header-inner {
+        max-width: 300px !important;
+    }
+
+    #mobile-dropdown {
+      margin-left: 85px !important;
+      border: none !important;
+    }
+
+    .FormMain {
+        display: flex;
+        flex-direction: column;
+        width: 300px !important;
+        justify-content: space-between;
+        padding: 0;
+        margin: auto;
+    }
+
+    .products {
+        padding-left: 0;
+        width: 300px !important;
+        border: none;
+        margin: auto;
+        border-bottom: #ffffff solid 1px;
+    } 
+
+    .users {
+        padding-left: 0;
+        width: 300px !important;
+        border: none;
+        margin: auto;
+    } 
+
+    .delivery {
+        padding-left: 0;
+        width: 300px !important;
+        border: none;
+        margin: auto;
+    }
+
+    .elementor-15 {
+        padding-top: 10px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .form2 {
+        padding-bottom: 0px;
+    }
+
+    .elementor-52 {
+        height: 60px !important;
+    }
+}
+
+
+/* Tablettes (écrans entre 601px et 768px) */
+@media (min-width: 745px) and (max-width: 900px) {
+    #mobile-menu-search {
+        display: none !important;
+    }
+    
+    .elementor-widget-container {
+        max-width: 750px !important;
+        margin: 20px auto;
+        padding: 0; 
+    }
+
+    .delivery {
+        padding-left: 10px !important;
+    }
+
+    #site-header-inner {
+        max-width: 750px !important;
+    }
+
+    #mobile-dropdown {
+      margin-left: 530px !important;
+      border: none !important;
+    }
+
+    .menu-item-21 a {
+        height: 48px !important;
+        align-content: center !important;
+    }
+
+    .menu-item-22 a {
+        height: 48px !important;
+    }
+    
+}
+
+
