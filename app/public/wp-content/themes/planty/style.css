@@ -1,11 +1,10 @@
-*
+/*
  * Theme Name:     Planty
  * Author:         s0led0b0ut
  * Template:       oceanwp
- * Text Domain:	   planty
- * Description:    OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful &amp; professional design. Very fast, responsive, RTL &amp; translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet &amp; mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor &amp; WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it
+ * Text Domain:    planty
+ * Description:    OceanWP is the perfect theme for your project. Lightweight and highly extendable. Developers will love its extensible codebase making it a joy to customize and extend. 
  */
-
  
  body {
     font-family: 'Syne', sans-serif;
@@ -199,12 +198,11 @@ input[type="number"] {
 
 /* Style for the Admin menu item */
 .menu-item-admin {
-    flex: 1; /* This will make the item take up the available space */
-    text-align: center; /* Center the text */
+    flex: 1 !important; 
+    text-align: center !important; 
     width: 236px !important;
     font-size: 16px !important;
 }
-
 
 /* Petits écrans (téléphones en mode portrait) */
 @media (min-width: 320px) and (max-width: 745px) {
@@ -246,7 +244,6 @@ input[type="number"] {
     .mobile-menu-search {
         visibility: hidden !important;
         display: none !important;
-        text-align: center !important;
     }
 
     #site-header-inner {
@@ -261,7 +258,6 @@ input[type="number"] {
     }
       
     #mobile-dropdown ul li a {
-        padding: auto 0 !important;
         text-align: center !important;
     }
 
@@ -308,8 +304,8 @@ input[type="number"] {
     .elementor-52 {
         height: 60px !important;
     }
-}
 
+}
 
 /* Tablettes (écrans entre 601px et 768px) */
 @media (min-width: 745px) and (max-width: 900px) {
@@ -352,5 +348,3 @@ input[type="number"] {
     }
     
 }
-
-
